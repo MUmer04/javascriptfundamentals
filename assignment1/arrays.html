@@ -23,13 +23,35 @@
 //    document.write(academic[6] +"<br>");
 //    document.write(academic[7] +"<br>");
 //    document.write(academic[8] +"<br>");
-        var std_name = ["ALi", "Ahmed", "Sameer"];
-        var score = [389, 440, 400];
-        var total = 500;
-        var per;
-        document.write("Score of " + std_name[0] + " is" + score[0] + ". Percentage is " + (score[0]/total)*100 + "%" );
-        document.write("<br>Score of " + std_name[1] + " is" + score[1] + ". Percentage is " + (score[1]/total)*100 + "%" );
-        document.write("<br>Score of " + std_name[2] + " is" + score[2] + ". Percentage is " + (score[2]/total)*100 + "%" );
+        // var std_name = ["ALi", "Ahmed", "Sameer"];
+        // var score = [389, 440, 400];
+        // var total = 500;
+        // var per;
+        // document.write("Score of " + std_name[0] + " is" + score[0] + ". Percentage is " + (score[0]/total)*100 + "%" );
+        // document.write("<br>Score of " + std_name[1] + " is" + score[1] + ". Percentage is " + (score[1]/total)*100 + "%" );
+        // document.write("<br>Score of " + std_name[2] + " is" + score[2] + ". Percentage is " + (score[2]/total)*100 + "%" );
+        var colors = ["blue", "green", "red", "orange", "yellow"];
+        document.write("<h1> previouse list</h1>" +colors + "<br>");
+        // document.write(colors[0]);
+        // document.write("<br>" +colors[1]);
+        // document.write("<br>" +colors[2]);
+        // document.write("<br>" +colors[3]);
+        // document.write("<br>" +colors[4]);
+       // var user = prompt("What color do you want to add at the begining? ");
+       // colors.unshift(user);
+        //document.write("<h1>new list List</h1>");
+       // document.write(colors);
+        //colors.unshift("sky blue", "Dark green");
+        //document.write("<h1>updated list</h1><br>" + colors);
+        //colors.pop();
+       // document.write(colors + "<br>");
+        alert(colors);// print array in pop up box
+        var user = prompt("what color do you want to add"); //ask the user color name
+        var user1 = prompt("at what position do want to add", "0-5");// ask the user postion to add color name
+        colors.splice(user1, 0, user);
+        document.write("<h1>your list</h1>" +colors);
+        
+
     </script>
 </body>
 </html>
