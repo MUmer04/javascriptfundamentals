@@ -30,8 +30,8 @@
         // document.write("Score of " + std_name[0] + " is" + score[0] + ". Percentage is " + (score[0]/total)*100 + "%" );
         // document.write("<br>Score of " + std_name[1] + " is" + score[1] + ". Percentage is " + (score[1]/total)*100 + "%" );
         // document.write("<br>Score of " + std_name[2] + " is" + score[2] + ". Percentage is " + (score[2]/total)*100 + "%" );
-        var colors = ["blue", "green", "red", "orange", "yellow"];
-        document.write("<h1> previouse list</h1>" +colors + "<br>");
+        // var colors = ["blue", "green", "red", "orange", "yellow"];
+        // document.write("<h1> previouse list</h1>" +colors + "<br>");
         // document.write(colors[0]);
         // document.write("<br>" +colors[1]);
         // document.write("<br>" +colors[2]);
@@ -45,11 +45,25 @@
         //document.write("<h1>updated list</h1><br>" + colors);
         //colors.pop();
        // document.write(colors + "<br>");
-        alert(colors);// print array in pop up box
-        var user = prompt("what color do you want to add"); //ask the user color name
-        var user1 = prompt("at what position do want to add", "0-5");// ask the user postion to add color name
-        colors.splice(user1, 0, user);
-        document.write("<h1>your list</h1>" +colors);
+        // alert(+colors);// print array in pop up box
+        // var user = prompt("what color do you want to add"); //ask the user color name
+        // var user1 = prompt("at what position do want to add", "0-5");// ask the user postion to add color name
+        // colors.splice(user1, 0, user); //takes user1 as first valu and add user value into array
+        // document.write("<h1>your list</h1>" +colors);
+        // var user3 = prompt("which index you want to delete");//user3 takes input from user
+        // var user4 = prompt("how many color do you want to delete");// takes input from user
+        // colors.splice(user3, user4);//splice takes user3 value as a first value and user4 as a 2nd value respectively
+        // document.write("<br>"+ colors); // print new list
+        //simple program to sort an array
+        var num = [325, 223,450, 330];
+        document.write(num + "<br>");
+        num.sort(num);
+        document.write(num);
+        //var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+        //document.write(cities);
+        //var selected_cities = cities.slice(2, 4);
+        //document.write("<br>Selected Cities <br>");
+       // document.write(selected_cities);
         
 
     </script>
