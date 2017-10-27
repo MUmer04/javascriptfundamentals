@@ -46,6 +46,25 @@
 //     for(var i = 0; i < fruits.length; i++) {
 //         document.write("Element at index"+[i]+"is " + fruits[i] + "<br>");
 //     }
+
+    var counting = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    document.write(counting + "<br>");
+    counting.reverse();
+    document.write(counting + "<br>");
+    counting.reverse();
+    document.write("Even :")
+    for(var i = 0; i < counting.length; i=i+2) {
+        document.write(counting[i]+ ",");
+    }
+    document.write("<br>Odd :")
+    for(var i = 1; i < counting.length; i=i+2) {
+        document.write(counting[i]+",");
+    }
+    document.write("<br>Series :")
+    for(var i = 2; i <= counting.length; i=i+2) {
+        document.write(counting[i]+"k,");
+    }
+
     </script>
 </body>
 </html>
