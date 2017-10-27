@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       for (var i = 0; i < text1.length; i++) {
+if (text1.slice(i, i + 12) === "World War II") {
+console.log(i)
+var startText = text1.slice(0, i); // 0-61
+var replacedText = "the Second World War";
+var endText = text1.slice(i + 12); //73 - end
+text1 = startText +replacedText + endText;
+
+}
+    </script>
+</body>
+</html>
