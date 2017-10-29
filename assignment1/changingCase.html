@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var cities = ["Karachi", "Lahore", "Islamabad", "Peshawar"];
+        // var cityTocheck = prompt("Enter city name");
+        // var firstChar = cityTocheck.slice(0,1);
+        // var otherChar = cityTocheck.slice(1);
+        // firstChar = firstChar.toUpperCase();
+        // otherChar = otherChar.toLowerCase();
+        // var name = firstChar + otherChar;
+
+       
+        // var name = firstChar + otherChar;
+        // for(var i =0; i<cities.length; i++){
+        //     if(name === cities[i]) {
+        //         alert("Welcome to " + cityTocheck);
+        //         break;
+        //     }
+        // }
+        // if (name !== cities[i]) {
+        //     alert("City not found");
+        // }
+        // var month = prompt ("Enter a month");
+        // var charInMonth = month.length;
+        // alert(charInMonth);
+        // if (charInMonth > 3) {
+        //        var newmonth =  month.slice(0,3);
+        //     alert(newmonth);
+        // }
+        // var text = "It is startling to think that, even in the darkest depths If the segment exists, the method finds the index of the firs J. R. R. Tolkien was."
+        // var newtext = text.indexOf("segment");
+        // //document.write(newtext);
+        // if (newtext !== -1) {
+        //     text = text.slice(0,newtext) + "Parts" + text.slice(newtext + 7);
+        //     document.write(text);
+        //  }
+        var text = `It is startling to think that, even in the darkest depths 
+                    If the segment exists The second string is
+                    the segment to be inserted. In the above code, the darkest `;
+           text = text.replace(/darkest/g, "Blackest");  
+           document.write(text);       
+ </script>
+    
+</body>
+</html>
