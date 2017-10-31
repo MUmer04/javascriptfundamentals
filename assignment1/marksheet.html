@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var num = 35.36;
+    document.write(num + typeof(num) + "<br>");
+    var num1 = num.toString();
+    document.write(num1 + typeof(num1) +"<br>");
+    a = num1.indexOf(".");
+    var number = num1.slice(0,a) + num1.slice(a+1);
+    document.write(number +" " + typeof(number));
+    var num = 35.36;
+
+// var convrt = num.toString();
+
+// var ne = convrt.replace(".", "");
+
+// document.write("Number: " + num + "<br>");
+// document.write("Result: " + ne);
+
+    </script>
+    
+</body>
+</html>

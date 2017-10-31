@@ -26,10 +26,49 @@
         // var newword = str.charAt(3);
         // document.write(str)
         // document.write("<br>Character at index 3 is :" + newword);
-        var city = "Hyderabad";
-        document.write(city+ "<br>");
-        city = city.replace("Hyder", "Islam");
-        document.write("After replacement new value is :" + city);
+        // var city = "Hyderabad";
+        // document.write(city+ "<br>");
+        // city = city.replace("Hyder", "Islam");
+        // document.write("After replacement new value is :" + city);
+        // var message = "Ali and Sami are best friends They play cricket and football together";
+        // message = message.replace(/and/g, "&");
+        // document.write(message);
+        //Checking type of value; number or string
+    //     var value = "472";
+    //     document.write(value +"<br>");
+    //     document.write(typeof(value));
+    //    value =  parseInt(value);
+    //     document.write("<br>" + value + "<br>");
+    //     document.write(typeof(value));
+    // var user = prompt("Enetr a word");
+    // document.write("User Input : " + user);
+    // user = user.toUpperCase();
+    // document.write("<br>Upper Case :" + user);
+    // var user = prompt("Enetr a word");
+    // document.write("user input :" + user);
+    // var firstChar = user.slice(0, 1);
+    // var lastChar = user.slice(1);
+    // firstChar = firstChar.toUpperCase();
+    // lastChar = lastChar.toLowerCase();
+    // var name = firstChar + lastChar;
+    // document.write("<br>Title Case :" + name); 
+    var num = "35.36";
+    document.write("Number = " + num+ "<br>");
+    //var a = num.indexOf(".");
+    document.write("<br>" + a + "<br>");
+    num = num.slice(0, a) + num.slice(a+1);
+    //document.write("<br>"+num);
+    num = num.toString();
+   // document.write(num +"<br>");
+    var num1 = num.indexOf(".");
+    var num3 = num.slice(0, num1);
+    var num4 = num.slice(num1+1);
+    var number = num3 + num4;
+document.write(number+"<br>");
+
+
+  //  document.write(typeof(num));
+
     </script>
 </body>
 </html>

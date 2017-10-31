@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function mult(a, b) {
+        //     var product = a * b;
+        //     return product;
+        // }
+        function calcTot(merchTot) {
+            var orderTot;
+            if (merchTot >= 100) {
+            orderTot = merchTot;
+            }
+            else if (merchTot < 50.01) {
+            orderTot = merchTot + 5;
+            }
+            else {
+            orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+            }
+            return orderTot;
+            }
+           //const result =  calcTot(51);
+           
+           function calcTax(price){
+               var newPrice =  price + calcTot(51);
+               return newPrice;
+           }
+           const abc = calcTax(80);
+           alert("abc", abc)
+           document.write(abc);
+document.write(abc);
+    </script>
+</body>
+</html>
