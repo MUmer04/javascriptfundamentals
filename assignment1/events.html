@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form onSubmit="getElementValue()">
+                <input type="text" id="name" />
+                <input type="text" id="password" />
+                <input type="text" id="email">
+                <input type="submit" value="Submit">
+                </form>
+                
+                fnction getElementValue() {
+                  const name = document.getElementById("name").value;
+                  const password = document.getElementById("password").value;
+                  const email = document.getElementById("email").value;
+                
+                
+                
+                
+                
+                  document.getElementById("email").value ="email@email.com";
+                  document.getElementById("name").value = "";
+                  document.getElementById("password").value = "";
+                
+                  alert(name);
+                }
+</body>
+</html>

@@ -36,18 +36,43 @@
 //         function greetUser(greeting) {
 //  alert(greeting);
 //  }
-function greetUser(greeting) {
+// function greetUser(greeting) {
   
-    //greetUser(whatever);
-     alert(greeting);
-}
-  var whatever = "Hello, there.";
-greetUser(whatever);
+//     //greetUser(whatever);
+//      alert(greeting);
+// }
+//   var whatever = "Hello, there.";
+// greetUser(whatever);
   
-    //gre
     
-    
- 
+    // function showBigNum(abc) {
+    //     alert(abc);
+    // }
+    //var almostAMil = 999999;
+ //showBigNum(999999);
+//  function showMessage(m, string, num){
+//  alert(m + string + num);
+//  }
+//  var month = "March";
+//  showMessage(month, "'s winner number is ", 23);
+function calcTot(merchTot) {
+ var orderTot;
+ if (merchTot >= 100) {
+ orderTot = merchTot;
+ }
+ else if (merchTot < 50.01) {
+ orderTot = merchTot + 5;
+ }
+ else {
+ orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+ }
+
+ //alert(orderTot);
+ return orderTot;
+ }
+ var orderTot = calcTot(89);
+
+ alert(orderTot);
     </script>
 </body>
 </html>
