@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //storing Current date and time in a variable
+    var daTe = new Date();
+    //document.write(daTe);
+//Displayin Current Month Name
+//     var months = ["january", "February", "March", "April","May","June","July","August", "September", "October","November","December"];
+//     var curMonth = daTe.getMonth();
+//    var month = months[curMonth];
+//    document.write("Current Month is : "+month);
+    var Days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var day = daTe.getDay();
+    var nameOfDay = Days[day];
+    //document.write(nameOfDay);
+var nameOfDay1 = nameOfDay.slice(0,3);
+document.write("Today is "+nameOfDay1); 
+if (nameOfDay == "Sunday" || nameOfDay == "Saturday"){
+    document.write("<br>It's Fun day");
+}
+    
+    
+    </script>
+</body>
+</html>
