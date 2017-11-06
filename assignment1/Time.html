@@ -122,16 +122,64 @@
 //     }
 //     document.write(square());
 // calculating factorial
-// function fact(){
-//     var num = +prompt("enter a vallue");
+//  function fact(b){
+//     //var num = +prompt("enter a vallue");
 //     var fac = 1;
-//     for(var a =1; a<=num; a++){
+//     for(var a =1; a<=b; a++){
 //         fac = fac*a;
     
 //          }
 //          return fac;
 // }
-// document.write("the factorial of the given number is "+fact());
+// document.write("the factorial of the given number is "+fact(5));
+
+// function count(a,b){
+//         a = +prompt("enter starting number");
+//        b = +prompt("enter ending number");
+//     for(a; a<=b; a++){
+//        document.write("<br>"+a);
+//     }
+
+// }
+
+// // count();
+// function outer(a){
+//     function inner(base,per){
+     
+//          var squr = (base*base) + (per*per);
+//         //document.write(squr);
+//         return squr;
+//     }
+
+//   c = inner(3,4);
+//   document.write("Base<sup>2</sup> + Per<sup>2</sup> = "+c);
+//   a = 5;
+//return c/a;
+//}
+
+
+//document.write("<br>Hypoteneus = " + outer());
+//function area(a,b){
+   // var width , height;
+//var height;
+//var width;
+// var a1 = a * height;
+// return a1;
+// }
+// var height = 10;
+// document.write(area(20,height));//
+function pallindrome(){
+    var word = prompt("enter a word");
+    
+    word1 = word.split("").reverse().join("");
+
+     if (word == word1){
+         document.write("this is a pallindrome")
+     }
+     else {
+         document.write("this is not a pallindrome");}
+}
+pallindrome();
     </script>
     
 </body>
