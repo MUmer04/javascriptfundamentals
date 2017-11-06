@@ -10,6 +10,7 @@
     <script>
         //storing Current date and time in a variable
     var daTe = new Date();
+    var msec = daTe.getTime();
     //document.write(daTe);
 //Displayin Current Month Name
 //     var months = ["january", "February", "March", "April","May","June","July","August", "September", "October","November","December"];
@@ -56,16 +57,82 @@
         // document.write("Later Date :" + lastdate);
 
 //days counter from a perticular day to  current day
-        var Rdate = new Date("june, 18, 2015");
-        var mseconds = Rdate.getTime();
-        var curMs = daTe.getTime();
-        var diffrc = curMs - mseconds;
-        var totalDays = diffrc/(1000*60*60*24);
+        // var Rdate = new Date("june, 18, 2015");
+        // var mseconds = Rdate.getTime();
+        // var curMs = daTe.getTime();
+        // var diffrc = curMs - mseconds;
+        // var totalDays = diffrc/(1000*60*60*24);
   
-        totalDays = Math.floor(totalDays);
-        document.write(totalDays +"Days have passed since 1st Ramadan, 2015");
+        // totalDays = Math.floor(totalDays);
+        // document.write(totalDays +"Days have passed since 1st Ramadan, 2015");
        // document.write(mseconds);
+       // seconds counter from a perticular point a reference point
+    //    var begDate = new Date("january, 01, 2015");
+    //    var msbegDate = begDate.getTime();
+    //    var msdiff = msec - msbegDate;
+    //    var sTotal = msdiff/(1000*60);
+    //    sTotal = Math.floor(sTotal);
+    //    document.write("Total secs from the reffernce day to 1st jan 2015 is "+ sTotal);
+  // setting hour
+    // document.write(daTe);
+    // daTe.setHours(10);
+    // document.write("<br>1 Hour ago it was"+ daTe);
     
+    // resetting date
+    // document.write(daTe);
+    // daTe.setFullYear(1917);
+    // document.write("<br> 100 years ago Date was "+daTe);
+// tells birth
+    // var user = prompt("Enter your age");
+    // var curyear = daTe.getFullYear();
+    // var birthYear = curyear - user;
+    // alert("Your birth year is "+ birthYear);
+  
+//  js funtions
+    // function Time(){
+    //     var d = new Date();
+    //     document.write(d);
+    // }
+    // document.write(Time());
+    // function Name(a, b) {
+    //     var c = a + b;
+    //     return c;
+    // }
+    // document.write(Name("Muhamme", "Umer"));
+ //sum of two numbers
+  //  function number(num, num1){
+    //var  a = +prompt("enter a number");
+        
+    //     // var b = +prompt("enter 2nd number");
+        
+    //     var c = num + num1;
+    //     return c;
+    // }
+    // document.write(number(12,2));
+    // function num (a,b,c) {
+    //     return a*b*c;
+    // }
+    // document.write(num(2,4,5));
+   // suare calculator
+//     function square()
+//     {
+//         var a = prompt("enter a value ");
+// var c = a*a;
+// return c;
+//     }
+//     document.write(square());
+// calculating factorial
+// function fact(){
+//     var num = +prompt("enter a vallue");
+//     var fac = 1;
+//     for(var a =1; a<=num; a++){
+//         fac = fac*a;
+    
+//          }
+//          return fac;
+// }
+// document.write("the factorial of the given number is "+fact());
     </script>
+    
 </body>
 </html>
