@@ -15,17 +15,56 @@
 //     var months = ["january", "February", "March", "April","May","June","July","August", "September", "October","November","December"];
 //     var curMonth = daTe.getMonth();
 //    var month = months[curMonth];
+
 //    document.write("Current Month is : "+month);
-    var Days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    var day = daTe.getDay();
-    var nameOfDay = Days[day];
+//Showing current month
+    // var Days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    // var day = daTe.getDay();
+    // var nameOfDay = Days[day];
     //document.write(nameOfDay);
-var nameOfDay1 = nameOfDay.slice(0,3);
-document.write("Today is "+nameOfDay1); 
-if (nameOfDay == "Sunday" || nameOfDay == "Saturday"){
-    document.write("<br>It's Fun day");
-}
-    
+// var nameOfDay1 = nameOfDay.slice(0,3); //Showing 1st 3 letters of month
+// document.write("Today is "+nameOfDay1); 
+// if (nameOfDay == "Sunday" || nameOfDay == "Saturday"){
+//     document.write("<br>It's Fun day");
+// }
+
+    // var curDate = daTe.getDate();
+    // if (curDate < 16) {
+    //     document.write("First fifteen days of the month");
+    // }
+    // else {
+    //     document.write("Last days of the month");
+    // }
+        //calculatin minutes and milli seconds snce junary 1 1970;
+    //     var mstoday = daTe.getTime();
+       
+    // var mtoday = mstoday/(1000*60*60);
+    // mtoday = Math.floor(mtoday);
+    // document.write("Current time" + daTe);
+    // document.write("<br>Ellapsed Milli Seconds Since January 1, 1970: " + mstoday);
+    // document.write("<br>Ellapsed Minutes Since January 1, 1970: " + mtoday);
+    //tells  Am or Pm 
+        // var curHour = daTe.getHours();
+        // document.write(curHour+ "<br>");
+        // if (curHour >= 12) {
+        //     document.write("Its PM")
+        // }
+        // else {
+        //     document.write("Its Am");
+        // }
+        // var lastdate = new Date("December, 31, 2022");
+        // document.write("Later Date :" + lastdate);
+
+//days counter from a perticular day to  current day
+        var Rdate = new Date("june, 18, 2015");
+        var mseconds = Rdate.getTime();
+        var curMs = daTe.getTime();
+        var diffrc = curMs - mseconds;
+        var totalDays = diffrc/(1000*60*60*24);
+  
+        totalDays = Math.floor(totalDays);
+        document.write(totalDays +"Days have passed since 1st Ramadan, 2015");
+       // document.write(mseconds);
     
     </script>
 </body>
